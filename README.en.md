@@ -8,3 +8,5 @@ Currently, this management tool only supports MySql-compliant databases, with pl
   
 The front-end JS framework code generation is still in the development stage, with some bugs that need to be fixed and functionality that needs to be improved.
   
+#### Generate Code 
+  Template file params:[template.json](./template.json)
