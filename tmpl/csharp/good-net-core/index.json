@@ -1,0 +1,249 @@
+{
+  "name": "GoodNetCore",
+  "lang": "c#",
+  "desc": "NetCore项目框GoodDotNet的模板文件",
+  "pages": [{
+      "name": "Entity",
+      "namespace": "GoodDotNet.Core.Entity",
+      "desc": "数据库实体文件",
+      "file": "entity.js",
+      "fileName": "${TableName}.cs",
+      "path": "GoodDotNet.Core\\Entity",
+      "type": "create"
+    },
+    {
+      "name": "IRepository",
+      "namespace": "GoodDotNet.Core.IRepository",
+      "desc": "仓储interface文件",
+      "file": "IRepository.js",
+      "fileName": "${TableName}IRepository.cs",
+      "path": "GoodDotNet.Core\\IRepository",
+      "type": "create"
+    },
+    {
+      "name": "Repository",
+      "namespace": "GoodDotNet.Core.Repository",
+      "desc": "仓储文件",
+      "file": "Repository.js",
+      "fileName": "${TableName}Repository.cs",
+      "path": "GoodDotNet.Core\\Repository",
+      "type": "create"
+    }, {
+      "name": "UnitOfWork",
+      "namespace": "GoodDotNet.Core.Data",
+      "desc": "UnitOfWork文件",
+      "file": "UnitOfWork.js",
+      "fileName": "UnitOfWork.cs",
+      "path": "GoodDotNet.Core\\Data",
+      "type": "append"
+    }, {
+      "name": "MyDbContext",
+      "namespace": "GoodDotNet.Core.Data",
+      "desc": "MyDbContext文件",
+      "file": "MyDbContext.js",
+      "fileName": "MyDbContext.cs",
+      "path": "GoodDotNet.Core\\Data",
+      "type": "append"
+    }
+
+
+  ],
+  "model": {
+    "name": "Models",
+    "namespace": "GoodDotNet.Core.Model",
+    "desc": "model文件",
+    "file": "model.js",
+    "fileName": "${ModelName}.cs",
+    "path": "GoodDotNet.Core\\Model"
+  },
+
+  "controller": [{
+      "name": "Controller",
+      "namespace": "GoodDotNet.WebAdmin.Controllers",
+      "desc": "控制器",
+      "file": "controller.js",
+      "fileName": "${TableName}Controller.cs",
+      "path": "GoodDotNet.WebAdmin\\Controllers",
+      "item": [{
+          "name": "Insert",
+          "method": "POST",
+          "type": "insert",
+          "desc": "",
+          "fileName": "Add",
+          "file": "controller\\insert.js"
+        },
+        {
+          "name": "Update",
+          "method": "POST",
+          "type": "update",
+          "desc": "",
+          "fileName": "Update",
+          "file": "controller\\update.js"
+        },
+        {
+          "name": "GetOne",
+          "method": "POST",
+          "type": "select",
+          "desc": "",
+          "fileName": "GetOne",
+          "file": "controller\\getone.js"
+        },
+        {
+          "name": "GetList",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetList",
+          "file": "controller\\getlist.js"
+        },
+        {
+          "name": "GetPage",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetPage",
+          "file": "controller\\getpage.js"
+        },
+        {
+          "name": "Delete",
+          "method": "POST",
+          "type": "select",
+          "desc": "",
+          "fileName": "Delete",
+          "file": "controller\\delete.js"
+        },
+        {
+          "name": "Count",
+          "method": "POST",
+          "type": "count",
+          "desc": "",
+          "fileName": "Count",
+          "file": "controller\\count.js"
+        }
+      ]
+
+    },
+    {
+      "name": "Service",
+      "namespace": "GoodDotNet.Service",
+      "desc": "服务",
+      "file": "service.js",
+      "fileName": "${TableName}Service.cs",
+      "path": "GoodDotNet.Service",
+      "item": [{
+          "name": "Insert",
+          "method": "POST",
+          "type": "insert",
+          "desc": "desc",
+          "fileName": "Add",
+          "file": "service\\insert.js"
+        }, {
+          "name": "Update",
+          "method": "POST",
+          "type": "update",
+          "desc": "desc",
+          "fileName": "Update",
+          "file": "service\\update.js"
+        }, {
+          "name": "GetOne",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetOne",
+          "file": "service\\getone.js"
+        }, {
+          "name": "GetList",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetList",
+          "file": "service\\getlist.js"
+        }, {
+          "name": "GetPage",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetPage",
+          "file": "service\\getpage.js"
+        }, {
+          "name": "Delete",
+          "method": "POST",
+          "type": "delete",
+          "desc": "desc",
+          "fileName": "Delete",
+          "file": "service\\delete.js"
+        },
+        {
+          "name": "Count",
+          "method": "POST",
+          "type": "count",
+          "desc": "desc",
+          "fileName": "Count",
+          "file": "service\\count.js"
+        }
+      ]
+    },
+    {
+      "name": "IService",
+      "namespace": "GoodDotNet.IService",
+      "desc": "服务界面",
+      "file": "iservice.js",
+      "fileName": "${TableName}IService.cs",
+      "path": "GoodDotNet.IService",
+      "item": [{
+          "name": "Insert",
+          "method": "POST",
+          "type": "insert",
+          "desc": "desc",
+          "fileName": "Add",
+          "file": "iservice\\insert.js"
+        }, {
+          "name": "Update",
+          "method": "POST",
+          "type": "update",
+          "desc": "desc",
+          "fileName": "Update",
+          "file": "iservice\\update.js"
+        }, {
+          "name": "GetOne",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetOne",
+          "file": "iservice\\getone.js"
+        }, {
+          "name": "GetList",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetList",
+          "file": "iservice\\getlist.js"
+        }, {
+          "name": "GetPage",
+          "method": "POST",
+          "type": "select",
+          "desc": "desc",
+          "fileName": "GetPage",
+          "file": "iservice\\getpage.js"
+        }, {
+          "name": "Delete",
+          "method": "POST",
+          "type": "delete",
+          "desc": "desc",
+          "fileName": "Delete",
+          "file": "iservice\\delete.js"
+        },
+        {
+          "name": "Count",
+          "method": "POST",
+          "type": "count",
+          "desc": "desc",
+          "fileName": "Count",
+          "file": "iservice\\count.js"
+        }
+      ]
+
+    }
+  ]
+
+}

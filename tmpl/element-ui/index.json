@@ -1,0 +1,16 @@
+{
+	"name": "element-ui",
+	"lang": "vue",
+	"desc": "采用element-ui,TypeScript的前端文件模板",
+	"pages": [{
+			"name": "vue",
+			"desc": "简单vue文件",
+			"file": "blank.vue"
+		},
+		{
+			"name": "dialog",
+			"desc": "弹窗文件",
+			"file": "dialog.vue"
+		}
+	]
+}

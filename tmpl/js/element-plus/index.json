@@ -1,0 +1,126 @@
+{
+	"name": "ElementPlus",
+	"lang": "js",
+	"desc": "NetCore项目框GoodDotNet的模板文件",
+	"page": [{
+			"name": "DialogPage",
+			"desc": "弹窗",
+			"file": "dialogpage.vue",
+			"fileName": "NewDialog.vue",
+			"path": "",
+			"dir": false
+
+		},
+		{
+			"name": "FormPage",
+			"desc": "增加/编辑表单",
+			"file": "form-page/index.vue",
+			"fileName": "index.vue",
+			"path": "NewFormPage",
+			"dir": true,
+			"children": [{
+					"name": "data.d.ts",
+					"desc": "数据页面",
+					"file": "form-page/data.d.ts",
+					"fileName": "data.d.ts",
+					"path": ""
+				},
+				{
+					"name": "service.ts",
+					"desc": "服务页面",
+					"file": "form-page/service.ts",
+					"fileName": "service.ts",
+					"path": ""
+				}
+			],
+			"api": [{
+					"type": "Insert",
+					"name": "api/Insert"
+				},
+				{
+					"type": "Update",
+					"name": "api/Update"
+				}			
+			]
+		},
+		{
+			"name": "TablePage",
+			"desc": "包含分页查询的",
+			"file": "table-page/table.ts",
+			"fileName": "NewTablePage.vue",
+			"dir": false,
+			"path": "",
+			"children": [
+			],
+			"api": [{
+					"type": "GetPage",
+					"name": "ApiGetPage"
+				},{
+					"type": "Count",
+					"name": "ApiCount"
+				}
+			
+			]
+		},
+		{
+			"name": "CombianPage",
+			"desc": " 组合页面，包含查询删除功能的表格页、添加/编辑页",
+			"file": "combin-page/index.vue",
+			"fileName": "index.vue",
+			"dir": true,
+			"path": "NewPage",
+			"children": [{
+					"name": "data.d.ts",
+					"desc": "数据页面",
+					"file": "combin-page/data.d.ts",
+					"fileName": "data.d.ts",
+					"path": ""
+				},
+				{
+					"name": "service.ts",
+					"desc": "服务页面",
+					"file": "combin-page/service.ts",
+					"fileName": "service.ts",
+					"path": ""
+				},
+				{
+					"name": "AddForm",
+					"desc": "添加/编辑表单",
+					"file": "combin-page/add.vue",
+					"fileName": "AddWindow.vue",
+					"path": ""
+				},
+				{
+					"name": "EditForm",
+					"desc": "添加/编辑表单",
+					"file": "combin-page/add.vue",
+					"fileName": "EditWindow.vue",
+					"path": ""
+				}
+
+			],
+			"api": [{
+					"type": "GetPage",
+					"name": "api/ApiGetPage"
+				},
+				{
+					"type": "Delete",
+					"name": "api/ApiDelete"
+				},
+				{
+					"type": "Count",
+					"name": "api/ApiCount"
+				},
+				{
+					"type": "Insert",
+					"name": "api/ApiInsert"
+				},
+				{
+					"type": "Update",
+					"name": "api/ApiUpdate"
+				}
+			]
+		}
+	]
+
+}

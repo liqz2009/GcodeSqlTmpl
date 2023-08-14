@@ -1,0 +1,247 @@
+{
+  "name": "GoodJava",
+  "lang": "java",
+  "desc": "Java项目框架GoodJava的模板文件",
+  "pages": [{
+      "name": "Entity",
+      "namespace": "com.good.domain.entity",
+      "desc": "数据库实体文件",
+      "file": "entity.js",
+      "fileName": "${TableName}.java",
+      "path": "Domain//src//main//java//com//good//domain/entity",
+      "type": "create"
+    },{
+      "name": "MapperXml",
+      "namespace": "com.good.domain.mapper",
+      "desc": "数据库Mapper文件",
+      "file": "mapper-xml.js",
+      "fileName": "${TableName}Mapper.xml",
+      "path": "Domain\\src\\main\\resources\\mapper",
+      "type": "create"
+    },{
+      "name": "Mapper",
+      "namespace": "com.good.domain.mapper",
+      "desc": "mapper interface",
+      "file": "mapper.js",
+      "fileName": "${TableName}Mapper.java",
+      "path": "Domain//src//main//java//com//good//domain/mapper",
+      "type": "create"
+    }
+    ,{
+      "name": "IService",
+      "namespace": "com.good.domain.service",
+      "desc": "数据库Service文件",
+      "file": "IService.js",
+      "fileName": "${TableName}IService.java",
+      "path": "Domain\\src\\main\\java\\com\\good\\domain\\service",
+      "type": "create"
+    },{
+      "name": "Service",
+      "namespace": "com.good.domain.service.impl",
+      "desc": "数据库ServiceImpl文件",
+      "file": "ServiceImpl.js",
+      "fileName": "${TableName}ServiceImpl.java",
+      "path": "Domain\\src\\main\\java\\com\\good\\domain\\service\\Impl",
+      "type": "create"
+    }
+  ],
+  "model": {
+    "name": "Models",
+    "namespace": "com.good.domain.models",
+    "desc": "model文件",
+    "file": "model.js",
+    "fileName": "${ModelName}.java",
+    "path": "Domain\\src\\main\\java\\com\\good\\domain\\models"
+  },
+
+  "controller": [{
+      "name": "Controller",
+      "namespace": "com.good.webadmin.Controller",
+      "description": "控制器",
+      "file": "controller.js",
+      "fileName": "${TableName}Controller.java",
+      "path": "WebAdmin\\src\\main\\java\\com\\good\\webadmin\\Controller",
+      "item": [{
+          "name": "Insert",
+          "method": "POST",
+          "type": "insert",
+          "description": "",
+          "fileName": "Add",
+          "file": "controller\\insert.js"
+        },
+        {
+          "name": "Update",
+          "method": "POST",
+          "type": "update",
+          "description": "",
+          "fileName": "Update",
+          "file": "controller\\update.js"
+        },
+        {
+          "name": "GetOne",
+          "method": "POST",
+          "type": "select",
+          "description": "",
+          "fileName": "GetOne",
+          "file": "controller\\getone.js"
+        },
+        {
+          "name": "GetList",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetList",
+          "file": "controller\\getlist.js"
+        },
+        {
+          "name": "GetPage",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetPage",
+          "file": "controller\\getpage.js"
+        },
+        {
+          "name": "Delete",
+          "method": "POST",
+          "type": "select",
+          "description": "",
+          "fileName": "Delete",
+          "file": "controller\\delete.js"
+        },
+        {
+          "name": "Count",
+          "method": "POST",
+          "type": "count",
+          "description": "",
+          "fileName": "Count",
+          "file": "controller\\count.js"
+        }
+      ]
+
+    },
+    {
+      "name": "Service",
+      "namespace": "com.good.domain.service",
+      "description": "服务",
+      "file": "ServiceImpl.js",
+      "fileName": "${TableName}ServiceImpl.java",
+      "path": "Domain\\src\\main\\java\\com\\good\\domain\\service\\Impl",
+      "item": [{
+          "name": "Insert",
+          "method": "POST",
+          "type": "insert",
+          "description": "desc",
+          "fileName": "Add",
+          "file": "ServiceImpl\\insert.js"
+        }, {
+          "name": "Update",
+          "method": "POST",
+          "type": "update",
+          "description": "desc",
+          "fileName": "Update",
+          "file": "ServiceImpl\\update.js"
+        }, {
+          "name": "GetOne",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetOne",
+          "file": "ServiceImpl\\getone.js"
+        }, {
+          "name": "GetList",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetList",
+          "file": "ServiceImpl\\getlist.js"
+        }, {
+          "name": "GetPage",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetPage",
+          "file": "ServiceImpl\\getpage.js"
+        }, {
+          "name": "Delete",
+          "method": "POST",
+          "type": "delete",
+          "description": "desc",
+          "fileName": "Delete",
+          "file": "ServiceImpl\\delete.js"
+        },
+        {
+          "name": "Count",
+          "method": "POST",
+          "type": "count",
+          "description": "desc",
+          "fileName": "Count",
+          "file": "ServiceImpl\\count.js"
+        }
+      ]
+    },
+    {
+      "name": "IService",
+      "namespace": "com.good.domain.service",
+      "description": "服务界面",
+      "file": "IService.js",
+      "fileName": "${TableName}IService.java",
+      "path": "Domain\\src\\main\\java\\com\\good\\domain\\service",
+      "item": [{
+          "name": "Insert",
+          "method": "POST",
+          "type": "insert",
+          "description": "desc",
+          "fileName": "Add",
+          "file": "IService\\insert.js"
+        }, {
+          "name": "Update",
+          "method": "POST",
+          "type": "update",
+          "description": "desc",
+          "fileName": "Update",
+          "file": "IService\\update.js"
+        }, {
+          "name": "GetOne",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetOne",
+          "file": "IService\\getone.js"
+        }, {
+          "name": "GetList",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetList",
+          "file": "IService\\getlist.js"
+        }, {
+          "name": "GetPage",
+          "method": "POST",
+          "type": "select",
+          "description": "desc",
+          "fileName": "GetPage",
+          "file": "IService\\getpage.js"
+        }, {
+          "name": "Delete",
+          "method": "POST",
+          "type": "delete",
+          "description": "desc",
+          "fileName": "Delete",
+          "file": "IService\\delete.js"
+        },
+        {
+          "name": "Count",
+          "method": "POST",
+          "type": "count",
+          "description": "desc",
+          "fileName": "Count",
+          "file": "IService\\count.js"
+        }
+      ]
+
+    }
+
+  ]
+
+}
