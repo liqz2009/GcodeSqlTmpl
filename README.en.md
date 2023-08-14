@@ -6,7 +6,5 @@ Currently, it supports Java and c# languages on the backend, with plans to intro
   
 Currently, this management tool only supports MySql-compliant databases, with plans to release   versions for SQL Server and other databases in the future.
   
-The front-end JS framework code generation is still in the development stage, with some bugs
-  
-that need to be fixed and functionality that needs to be improved.
+The front-end JS framework code generation is still in the development stage, with some bugs that need to be fixed and functionality that needs to be improved.
   
