@@ -8,7 +8,7 @@ Currently, this management tool only supports MySql-compliant databases, with pl
 The front-end JS framework code generation is still in the development stage, with some bugs that need to be fixed and functionality that needs to be improved.
  ## [下载download](https://www.1000good.com/2023/08/14/sharpknife%e5%bf%ab%e5%88%80/)
 #### 介绍
-  SharpKnife【快刀】是为程序员开发的一款免费的MySql数据库管理软件，并提供基于数据库的代码生成工具。可以大幅提高程序员的开发效率，并使得代码更加规范。
+  GcodeSql 是为程序员开发的一款免费的MySql数据库管理软件，并提供基于数据库的代码生成工具。可以大幅提高程序员的开发效率，并使得代码更加规范。
   
 目前后端支持java、c#语言，后续会推出php、go的模板，快速完成单表的增删改查等功能，多表联查的功能正在开发中，后边版本会推出。与其他生成工具不同的是，他是基于框架项目级代码生成，提供全套规范文件。模板文件采用标准的[ejs](https://ejs.bootcss.com/)语言，你可以根据自己项目需求，编写自己的模板。
   
