@@ -18,5 +18,8 @@ The front-end JS framework code generation is still in the development stage, wi
 
 #### 代码生成  
   模板文件参数看[template.json](./template.json)
+  
+#### 项目框架
+   [GoodDotnet: .net core 多项目工程模板](https://gitee.com/liqz2009/good-dotnet)
 
- 
+   [GoodJava: java spring boot 多项目框架模板](https://gitee.com/liqz2009/good-java)
